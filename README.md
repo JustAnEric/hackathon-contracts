@@ -19,7 +19,7 @@ Using a smart contract does not replace good event organization, but it gives Ha
 
 ## What This Contract Does
 
-The main contract is [`contracts/HackathonVoting.sol`](/home/dweg0/Documents/hacksp/admin-painel/contracts/contracts/HackathonVoting.sol).
+The main contract is [`contracts/HackathonVoting.sol`](contracts/HackathonVoting.sol).
 
 It allows the contract owner to:
 
@@ -51,12 +51,12 @@ This means mentors have a higher voting weight than team members. Every register
 
 ## Project Structure
 
-- [`contracts/HackathonVoting.sol`](/home/dweg0/Documents/hacksp/admin-painel/contracts/contracts/HackathonVoting.sol): main smart contract
-- [`scripts/deploy.ts`](/home/dweg0/Documents/hacksp/admin-painel/contracts/scripts/deploy.ts): deployment script
-- [`test/test.ts`](/home/dweg0/Documents/hacksp/admin-painel/contracts/test/test.ts): integration-style test script
-- [`hardhat.config.ts`](/home/dweg0/Documents/hacksp/admin-painel/contracts/hardhat.config.ts): Hardhat network configuration
-- [`deployments.json`](/home/dweg0/Documents/hacksp/admin-painel/contracts/deployments.json): deployed contract addresses by environment
-- [`.env.sample`](/home/dweg0/Documents/hacksp/admin-painel/contracts/.env.sample): environment variable template
+- [`contracts/HackathonVoting.sol`](contracts/HackathonVoting.sol): main smart contract
+- [`scripts/deploy.ts`](scripts/deploy.ts): deployment script
+- [`test/test.ts`](test/test.ts): integration-style test script
+- [`hardhat.config.ts`](./hardhat.config.ts): Hardhat network configuration
+- [`deployments.json`](./deployments.json): deployed contract addresses by environment
+- [`.env.sample`](./.env.sample): environment variable template
 
 ## Environment Files
 
@@ -68,7 +68,7 @@ This project loads environment variables from files named:
 
 The file used depends on the `ENV` value passed to the scripts.
 
-Use [`.env.sample`](/home/dweg0/Documents/hacksp/admin-painel/contracts/.env.sample) as the base template:
+Use [`.env.sample`](./.env.sample) as the base template:
 
 ```env
 RPC_URL=http://127.0.0.1:8545
@@ -161,15 +161,15 @@ npm run test:local
 
 1. Configure the correct `.env.<environment>` file.
 2. Run the deploy script for that environment.
-3. The contract address is saved to [`deployments.json`](/home/dweg0/Documents/hacksp/admin-painel/contracts/deployments.json).
+3. The contract address is saved to [`deployments.json`](./deployments.json).
 4. The test script reads that address and interacts with the deployed contract.
 
 ## Contract Addresses
 
-To make the system more transparent, the deployed contract addresses are published in this README based on [`deployments.json`](/home/dweg0/Documents/hacksp/admin-painel/contracts/deployments.json).
+To make the system more transparent, the deployed contract addresses are published in this README based on [`deployments.json`](./deployments.json).
 
 <!-- CONTRACT_ADDRESSES_START -->
-This section is generated from [`deployments.json`](/home/dweg0/Documents/hacksp/admin-painel/contracts/deployments.json).
+This section is generated from [`deployments.json`](./deployments.json).
 
 | Environment | Network | Contract | Address | Explorer |
 | --- | --- | --- | --- | --- |
